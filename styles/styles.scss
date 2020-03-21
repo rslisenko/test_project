@@ -47,6 +47,54 @@ button {
 	background-color: white;
 	overflow: hidden;
 }
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 70px;
+	right: 70px;
+	z-index: 10;
+	padding: 20px 30px;
+}
+
+.language-switcher {
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 15px;
+	text-align: center;
+	background-color: white;
+	&:hover {
+		cursor: pointer;
+		.languages-list {
+			max-height: 200px;
+			padding-top: 10px;
+		}
+	}
+	.current-language {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.languages-list {
+		margin: 0;
+		padding-top: 0;
+		max-height: 0;
+		padding-left: 0;
+		overflow: hidden;
+		list-style-type: none;
+		transition: 0.3s;
+		li {
+			text-align: center;
+			margin-bottom: 5px;
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 .hero-section {
 	display: flex;
 	position: relative;

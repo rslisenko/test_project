@@ -49,6 +49,47 @@ button {
   background-color: white;
   overflow: hidden; }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  right: 70px;
+  z-index: 10;
+  padding: 20px 30px; }
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: white; }
+  .language-switcher:hover {
+    cursor: pointer; }
+    .language-switcher:hover .languages-list {
+      max-height: 200px;
+      padding-top: 10px; }
+  .language-switcher .current-language {
+    font-size: 20px;
+    font-weight: bold; }
+  .language-switcher .languages-list {
+    margin: 0;
+    padding-top: 0;
+    max-height: 0;
+    padding-left: 0;
+    overflow: hidden;
+    list-style-type: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .language-switcher .languages-list li {
+      text-align: center;
+      margin-bottom: 5px; }
+      .language-switcher .languages-list li:hover {
+        font-weight: bold; }
+
 .hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
